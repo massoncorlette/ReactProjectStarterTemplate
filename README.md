@@ -1,6 +1,10 @@
 ## Overview
 This template is set up with Webpack, Babel, and essential plugins to start a modern JavaScript project.
 
+## Future Improvements
+- Adding React setup for building dynamic user interfaces.
+- Incorporating Node.js/Express backend to make it a full-stack starter.
+
 ## HOW TO USE THIS TEMPLATE
 1. Clone the repo.
 2. Run `npm install`.
