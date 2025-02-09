@@ -3,6 +3,12 @@
 Vite and Vitest setup now run:
 npm install
 npm run dev
+npm react-router-dom
+
+Two packages that come with react-router-dom:
+1. Loaders fetch data before rendering. (link)
+	1. A big advantage of loaders is that they decouple data fetching from the component rendering, thus avoiding the waterfall problem.
+2. Actions handle form submissions without needing extra state. (Prevents the need for useState in simple <form> handling.)
 
 For testing run:
 npm install jsdom --save-dev (enable HTML for vitest testing)

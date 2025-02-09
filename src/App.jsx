@@ -1,8 +1,17 @@
-import { useState, useEffect } from 'react'
-import './styles/App.css'
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-
-const App = () => <h1>Our First Test</h1>;
+function App() {
+  return (
+    <div>
+      <Navbar />
+      <main>
+        <Outlet /> {/* 👈 Child pages will be rendered here */}
+      </main>
+      <Footer />
+    </div>
+  );
+}
 
 export default App;
-
