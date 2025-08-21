@@ -1,8 +1,8 @@
 {/* import { useState, useEffect } from 'react' */}
 import { useParams } from "react-router-dom";
-import DefaultHomePage from "./DefaultHomePage";
-import PageOne from "./PageOne";
-import PageTwo from "./PageTwo";
+import Login from "./Login";
+import HomePage from "./HomePage";
+import SignUp from "./Signup";
 import '../styles/App.css'
 
 function Home() {
@@ -11,15 +11,13 @@ function Home() {
   return (
     <div>
     <h1>Hello from home page!</h1>
-    <p>So, how are you?</p>
-    <hr />
-    <h2>The page visited is here:</h2>
-    {name === "pageone" ? (
-      <PageOne />
-    ) : name === "pagetwo" ? (
-      <PageTwo />
+
+    {name === "home" ? (
+      <HomePage />
+    ) : name === "sign-up" ? (
+      <SignUp />
     ) : (
-      <DefaultHomePage />
+      <Login />
     )}
   </div>
   )
