@@ -5,12 +5,18 @@
 import { Link } from "react-router-dom";
 
 
+// eslint-disable-next-line react-refresh/only-export-components
+export const getUser = async () => {
+  const response = await fetch("/");
+  return console.log(response.json());
+};
+
 function Login() {
 
   return (
     <>
       <div id="loginForm"  >
-        <form action="/login" method="POST" id="loginFormInput" autoComplete="off">
+        <form action="/" method="POST" id="loginFormInput" autoComplete="off">
           <div className="loginInput">
             <input id="email" name="username" autoComplete="off" placeholder="Enter Email" type="text" />
           </div>
